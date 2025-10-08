@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+
+    <!-- Imposta a true se vuoi la tray con System.Windows.Forms.NotifyIcon -->
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <!-- *** ICONA DELL’ESEGUIBILE *** -->
+    <ApplicationIcon>Assets\DeepLocal_UserIcon_Framed.ico</ApplicationIcon>
+
+    <RootNamespace>DeepLocal</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Copia l'icona accanto all'EXE (utile anche per la tray) -->
+  <ItemGroup>
+    <Content Include="Assets\DeepLocal_UserIcon_Framed.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
