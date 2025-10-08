@@ -80,6 +80,14 @@ App.xaml / App.xaml.cs
 MainWindow.xaml / MainWindow.xaml.cs
 Assets/ (icons and images)
 ```
+# ⬇️ Download "DeepLocal – First Official Release (Stable)"
+
+Get the DeepLocal Windows installer (ITA/ENG) from release v1.0.0:
+https://github.com/ShinRalexis/DeepLocal/releases/tag/v1.0.0
+
+Works on Windows 10/11. Requires Ollama running at http://127.0.0.1:11434.
+The installer sets up Start menu shortcuts, tray icon, and optional Start with Windows.
+
 # ⌨️ Shortcuts
 
 Ctrl+V paste into source
