@@ -12,7 +12,7 @@ Auto-detect of the source language (the selector automatically switches to the r
 
 Coherent swap (swaps texts and languages without forcing English)
 
-Ollama model selector (default gemma3:12b; aya-expanse:8b, gpt-oss:120b-cloud)
+Ollama model selector (default gemma3:12b; mistral:latest, aya-expanse:8b, gpt-oss:20b, gpt-oss:120b-cloud)
 
 Quick actions: Paste, Copy, Translate ▶️
 
@@ -54,16 +54,6 @@ ollama pull gpt-oss:120b-cloud
 
 DeepLocal selects gemma3:12b by default. You can change the model from the menu at the top right.
 Note: gpt-oss:120b-cloud may not be available on all local installations; in that case use gemma3:12b or one of the other listed models.
-
-# 🚀 Installation (end users)
-
-Download the installer from the Releases section.
-
-Run the setup.
-
-Launch DeepLocal (it stays in the tray): double-click the 🌎 icon to open/close.
-
-In Options ⚙️ you can enable Start with Windows.
 
 # 🧑‍💻 Build from source
 ```bash
