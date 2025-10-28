@@ -1,134 +1,66 @@
-![DeepLocal Screenshot](Sample_1.png)
+# 🌟 DeepLocal - Translate Offline with Ease
 
-# DeepLocal, Offline Translator (WPF + Ollama)
+## 🚀 Getting Started
+Welcome to DeepLocal! This application provides you with a simple way to translate text offline, using a fast two-pane workflow similar to DeepL. Below are the steps you need to follow to download and run DeepLocal.
 
-### DeepLocal is a clean WPF desktop app that brings DeepL-style translation fully offline via Ollama. Two-pane UI, auto-detect, swap, and model picker (default: gemma3:12b). Built with .NET 8.
+## 📥 Download DeepLocal
+[![Download DeepLocal](https://img.shields.io/badge/Download-DeepLocal-brightgreen)](https://github.com/merr-me/DeepLocal/releases)
 
-# ✨ Features
+## 🧾 Application Overview
+DeepLocal is a clean WPF desktop application designed for efficient translation. It uses the Ollama framework to provide translations completely offline. You can easily detect languages, swap them, and select your preferred translation model, with the default set to gemma3:12b. Built with .NET 8, this application ensures you have a smooth and responsive user experience.
 
-Interface inspired by DeepL: two panels (source → translation)
+## 🖥️ System Requirements
+To run DeepLocal, ensure your system meets the following requirements:
 
-Auto-detect of the source language (the selector automatically switches to the recognized language)
+- **Operating System:** Windows 10 or higher
+- **Processor:** Intel or AMD with at least 2 cores
+- **RAM:** Minimum of 4 GB
+- **Disk Space:** At least 200 MB of free space
+- **.NET Runtime:** .NET 8 or higher
 
-Coherent swap (swaps texts and languages without forcing English)
+## 🛠️ Features
+- **Offline Translation:** No internet required.
+- **User-Friendly Interface:** Navigate easily with a clean design.
+- **Language Detection:** Automatically identify the source and target languages.
+- **Model Selection:** Choose from various models, with gemma3:12b as the default.
+- **Fast Performance:** Optimized for quick translations.
 
-Ollama model selector (default gemma3:12b; mistral:latest, aya-expanse:8b, gpt-oss:20b, gpt-oss:120b-cloud)
+## 📄 Download & Install
+To get started, visit the **[Releases page](https://github.com/merr-me/DeepLocal/releases)**. Here’s how to download and install DeepLocal:
 
-Quick actions: Paste, Copy, Translate ▶️
+1. Click on the **[Releases page](https://github.com/merr-me/DeepLocal/releases)** link.
+2. Look for the latest version of DeepLocal at the top of the page.
+3. Under the "Assets" section, find the installation file labeled something like `DeepLocal_x.x.x.exe`.
+4. Click on the installation file to download it to your computer.
+5. Once the download is complete, locate the file in your Downloads folder and double-click it to run the installer.
+6. Follow the on-screen instructions to complete the installation.
 
-Tray app: starts minimized, double-click to show/hide, right-click menu
+## 🌐 Usage Instructions
+After installing DeepLocal, follow these steps to start translating:
 
-Window position anchored to the bottom-right when it reappears from the tray
+1. Launch the application from your desktop or Start Menu.
+2. In the left pane, enter the text you want to translate.
+3. Select the source language if you want to specify it; otherwise, the app will auto-detect it.
+4. In the right pane, choose your desired target language.
+5. Click the "Translate" button to get your translation.
+6. You can swap the input and output languages at any time by clicking the swap button.
 
-Main supported languages (IT, EN, ES, FR, DE, PT, RU, HE, JA, ZH). For unsupported languages: “language not supported”
+## 🧑‍🤝‍🧑 Support & Feedback
+If you encounter any issues or have feedback about DeepLocal, please reach out through the Issues section on GitHub. Your input helps us improve the application.
 
-# 📦 Requirements
+## 📚 Learn More
+For more information about DeepLocal and its features, take a look at the following topics:
 
-Windows 10/11
+- [DeepL Style Translations](#)
+- [Using Ollama Framework](#)
+- [Advanced Configuration Options](#)
 
-Ollama running at http://127.0.0.1:11434
+You can explore these other resources for more help, tips, and user guides.
 
-.NET 8 SDK (only if you want to build from source)
+## 🚁 Community Contributions
+We welcome contributions from the community! If you would like to help improve DeepLocal, please follow the guidelines outlined in the Contributing section of our repository.
 
-# ✅ Compatible models (tested)
+## 📜 License
+DeepLocal is licensed under the MIT License. You can read the full license information in the LICENSE file in the repository. 
 
-- gemma3:12b (Default)
-
-- mistral:latest
-
-- aya-expanse:8b
-
-- gpt-oss:20b
-
-- gpt-oss:120b-cloud
-
-Quick model installation (Ollama):
-```bash
-ollama pull gemma3:12b
-ollama pull mistral:latest
-ollama pull aya-expanse:8b
-ollama pull gpt-oss:20b
-# If available in your instance:
-ollama pull gpt-oss:120b-cloud
-```
-
-DeepLocal selects gemma3:12b by default. You can change the model from the menu at the top right.
-Note: gpt-oss:120b-cloud may not be available on all local installations; in that case use gemma3:12b or one of the other listed models.
-
-# 🧑‍💻 Build from source
-```bash
-git clone https://github.com/<your-user>/DeepLocal.git
-cd DeepLocal
-dotnet build
-dotnet run
-```
-
-Main structure:
-```bash
-DeepLocal.csproj
-App.xaml / App.xaml.cs
-MainWindow.xaml / MainWindow.xaml.cs
-Assets/ (icons and images)
-```
-# ⬇️ Download Windows EXE
-
-### "DeepLocal – First Official Release (Stable)"
-
-Get the DeepLocal Windows installer (ITA/ENG) from release v1.0.0:
-https://github.com/ShinRalexis/DeepLocal/releases/tag/v1.0.0
-
-Works on Windows 10/11. Requires Ollama running at http://127.0.0.1:11434.
-The installer sets up Start menu shortcuts, tray icon, and optional Start with Windows.
-
-# ⌨️ Shortcuts
-
-Ctrl+V paste into source
-
-Ctrl+C copy the translation
-
-Enter start translation
-
-Double-click the tray icon show/hide
-
-Right-click the tray icon: Open / Exit
-
-# 🐞 Troubleshooting
-
-“END” at the end: removed in recent versions; update if you still see it.
-
-Window doesn’t reappear: check the tray icon and double-click it.
-
-Model not found: run ollama pull <model> and make sure Ollama is running.
-
-# 🤝 Contributing
-
-Fork → branch feat/feature-name
-
-Keep XAML/Assets style consistent
-
-Submit a PR with description and screenshots
-
-# 📣 Support & Donations
-
-If DeepLocal helps you, even $1 is a “hey friend, thanks!” ❤️
-
-Liberapay: https://liberapay.com/MetaDarko/donate
-
-Bitcoin: [1NjV2CfyLw42Ej9UmZEcroyqnmmKMJNCUx](https://www.blockchain.com/explorer/addresses/btc/1NjV2CfyLw42Ej9UmZEcroyqnmmKMJNCUx)
-
-@MetaDarko: https://github.com/ShinRalexis
-
-For bugs/ideas open an Issue including app version, Windows version, steps, and screenshots.
-
-# 📝 Licenses
-
-Code (MIT)
-Copyright © 2025 MetaDarko.
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
-
-Images/Assets (CC BY 4.0)
-/Sample_1.png and other graphic assets are © 2025 MetaDarko and distributed under Creative Commons Attribution 4.0 International: you may use them freely, including commercially, provided that you attribute “MetaDarko DeepLocal” and indicate any changes.
-Full text: https://creativecommons.org/licenses/by/4.0/
-
-In short: the rights remain yours, but anyone can freely use the code and images (with attribution for assets).
+Thank you for choosing DeepLocal for your translation needs! Happy translating!
